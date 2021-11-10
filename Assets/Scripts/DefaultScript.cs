@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 ** and is a nice quick hack into Unity to place logic that decides default scene/action behavior when the game starts */
 public class DefaultScript : MonoBehaviour
 {
-    GameType start = GameType.Debug;    // change this to one of the enum values below to decide the type of game that will be launched
+    [SerializeField]GameType StartType = GameType.Debug;
 
     enum GameType
     {
@@ -15,7 +15,7 @@ public class DefaultScript : MonoBehaviour
 
     void Start()
     { 
-        switch (start)
+        switch (StartType)
         { 
             case(GameType.Demo): SceneManager.LoadScene("DemoScene"); break;
             case(GameType.Debug): SceneManager.LoadScene("TestScene"); break;
