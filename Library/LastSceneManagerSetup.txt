@@ -1,13 +1,13 @@
 sceneSetups:
 - path: Assets/Scenes/DefaultScene.unity
   isLoaded: 1
-  isActive: 1
-  isSubScene: 0
-- path: Assets/Scenes/TestScene.unity
-  isLoaded: 1
   isActive: 0
   isSubScene: 0
-- path: Assets/Scenes/DemoScene.unity
+- path: Assets/Scenes/DebugScene.unity
   isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/DemoScene.unity
+  isLoaded: 0
   isActive: 0
   isSubScene: 0

@@ -57,9 +57,7 @@ public class EnemyMoveControl : MonoBehaviour
 
     public class PursuitState : BaseState
     {
-        public PursuitState(GameObject obj) : base(obj)
-        {
-        }
+        public PursuitState(GameObject obj) : base(obj) {}
 
         public override void Enter()
         {
@@ -72,16 +70,16 @@ public class EnemyMoveControl : MonoBehaviour
             if (Vector2.Distance(GameObject.FindWithTag("Player").transform.position, rb.transform.position) < 3) 
                 ; // TODO ATTACK HERE
             
-            else if ( GameObject.FindWithTag("Player").transform.position.x < (rb.transform.position.x + 3) )
-            {
-                var force = (20f + emy.speedModifier);
-                rb.AddForce(Vector2.left * force * Time.deltaTime);
-            }
-            
-            else if ( GameObject.FindWithTag("Player").transform.position.x > (rb.transform.position.x - 3) )
+            else if ( GameObject.FindWithTag("Player").transform.position.x < (rb.transform.position.x - 3) )
             {
                 var force = (20f + emy.speedModifier);
                 rb.AddForce(Vector2.right * force * Time.deltaTime);
+            }
+            
+            else if ( GameObject.FindWithTag("Player").transform.position.x > (rb.transform.position.x + 3) )
+            {
+                var force = (20f + emy.speedModifier);
+                rb.AddForce(Vector2.left * force * Time.deltaTime);
             }
 
         }
