@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{b28fb5b2-6244-0c6b-a872-40dd957e5fe0}</ProjectGuid>
+    <ProjectGuid>{c7bc76e4-366b-8c8a-b181-3ed63f0ffae8}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -41,6 +41,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <None Include="Assets\Environment Pack\README.txt" />
      <None Include="Assets\Nature_pixel_art_assets\pixel_snapping_README.txt" />
      <Reference Include="UnityEngine">
      <HintPath>C:/Program Files/Unity/Editor/2022.1.0a15/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
